@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* Smooth Scroll */
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    /* font-family: 'TheSeasons','sans-serif'; */
+    font-family: 'Dosis', sans-serif;
+    /* @font-face {
+        font-family: the-season;
+        src: url('/Fontspring-DEMO-theseasons-reg.otf');
+    } */
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+  
+  
+/* Nav Bar */
+.navbar-brand {
+    margin-right: auto; 
+    /* font-family: 'TheSeasonsBold','sans-serif'; */
+    font-family: 'Dosis', sans-serif;
+    /* font-weight: bold; */
+  }
+  .navbar-nav {
+    margin-left: auto; 
+  }
+
+section{
+    width: 100%;
+    float: left;  /* what is this? */
+    height: 100vh;
+
+    position: relative;  /* making it parent*/
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.bg-dark-mystyle {
+    background-color: white;
+}
+ 
+ #home, #about, #product, #pricing, #musician, #contact{
+     color: black;
+     background-color: white;
+ }
+/* 
+ h1,h3{
+    /* Brings element to the center 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+
+/* h1,h3{
+    top: 10%;
+} */
+/* .home-section2{
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: center; top: 10%;
+} */
+.designation{
+    font-size: 3rem;
+}
+
+.square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    /* box-shadow: 0 25px 45px rgba(0,0,0,0.1); */
+    /* border: 1px solid rgba(255,255,255,0.5); */
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* background: rgba(255,255,255,0.1); */
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i)) ;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(-40px);
+    } 
+    50%
+    {
+        transform: translateY(40px);
+    }    
+}
+.square:nth-child(1){
+    /* top: 10px; */
+    top: 10vh;
+    /* right: 600px; */
+    right: 26vw;
+    width: 100px;
+    height: 100px;
+}
+
+.square:nth-child(2){
+    /* top: 10px; */
+    top: 12vh;
+    /* right: 600px; */
+    left: 26vw;
+    width: 100px;
+    height: 100px;
+}
+
+.square:nth-child(3){
+    /* top: 10px; */
+    top: 20vh;
+    /* right: 600px; */
+    right: 61vw;
+    width: 100px;
+    height: 100px;
+}
+
+.square:nth-child(4){
+    /* top: 10px; */
+    bottom: 10vh;
+    /* right: 600px; */
+    right: 26vw;
+    width: 100px;
+    height: 100px;
+}
+
+.square:nth-child(5){
+    /* top: 10px; */
+    top: 67vh;
+    /* right: 600px; */
+    right: 45vw;
+    width: 100px;
+    height: 100px;
+}
+
+.square:nth-child(5){
+    /* top: 10px; */
+    bottom: 33vh;
+    /* right: 600px; */
+    right: 45vw;
+    width: 100px;
+    height: 100px;
+}
+.square:nth-child(6){
+    /* top: 10px; */
+    top: 49vh;
+    /* right: 600px; */
+    right: 66vw;
+    width: 100px;
+    height: 100px;
+}
+
+.col-sm-12-screen {
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: center; top: 10%;
+}
+
+.col-md-12-screen {
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: center; top: 10%;
+}
+
+@media (max-width: 769px){
+    .designation{
+        /* font-size: 2.2rem; */
+        font-size: 1.8rem;
+    }
+    .col-sm-12-screen {
+        display: flex; 
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    /* text-align: center; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    gap: 3vw;
+
+    padding: 1.5vw 0;
+ }
+
+ 
